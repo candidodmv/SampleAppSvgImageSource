@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+            xmlns:ffimageloadingsvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+            xmlns:viewmodels="clr-namespace:SvgImageSource.ViewModels;assembly=SvgImageSource"
+            xmlns:pages="clr-namespace:SvgImageSource;assembly=SvgImageSource"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            BarBackgroundColor="#2196F3"
+            BarTextColor="White"
+            android:TabbedPage.BarItemColor="Orange"
+            android:TabbedPage.BarSelectedItemColor="Red"
+            x:Class="SvgImageSource.TabbedPage1">
+    <TabbedPage.Resources>
+        <ResourceDictionary>
+            <ffimageloadingsvg:SvgImageSourceConverter x:Key="SvgImageSourceConverter"></ffimageloadingsvg:SvgImageSourceConverter>
+            <viewmodels:TabItemViewModel x:Key="viewModel"></viewmodels:TabItemViewModel>
+        </ResourceDictionary>
+    </TabbedPage.Resources>
+  <!--Pages can be added as references or inline-->
+    <pages:MainPage Title="Tab 1" BindingContext="{Binding Source={StaticResource viewModel}}" IconImageSource="{Binding SourceImage}" />
+    <pages:MainPage Title="Tab 2" BindingContext="{Binding Source={StaticResource viewModel}}" IconImageSource="{Binding SourceImage}" />
+    <pages:MainPage Title="Tab 3" BindingContext="{Binding Source={StaticResource viewModel}}" IconImageSource="{Binding SourceImage}" />
+    <pages:MainPage Title="Tab 4" BindingContext="{Binding Source={StaticResource viewModel}}" IconImageSource="{Binding SourceImage}" />
+    <pages:MainPage Title="Tab 5" BindingContext="{Binding Source={StaticResource viewModel}}" IconImageSource="{Binding SourceImage}" />
+</TabbedPage>
