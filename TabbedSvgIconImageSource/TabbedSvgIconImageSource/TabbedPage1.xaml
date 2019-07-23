@@ -23,7 +23,7 @@
             <x:String x:Key="urlSvg">https://image.flaticon.com/icons/svg/149/149200.svg</x:String>
             <viewmodels:TabbedItemViewModel x:Key="viewModel1">
                 <x:Arguments>
-                    <x:String>https://mobile-portalfacil.azurewebsites.net/icons/servicos_online.svg</x:String>
+                    <x:String>https://image.flaticon.com/icons/svg/347/347555.svg</x:String>
                 </x:Arguments>
             </viewmodels:TabbedItemViewModel>
             <viewmodels:TabbedItemViewModel x:Key="viewModel2">
@@ -33,7 +33,7 @@
             </viewmodels:TabbedItemViewModel>
             <viewmodels:TabbedItemViewModel x:Key="viewModel3">
                 <x:Arguments>
-                    <x:String>https://mobile-portalfacil.azurewebsites.net/icons/servicos_online.svg</x:String>
+                    <x:String>https://image.flaticon.com/icons/svg/347/347555.svg</x:String>
                 </x:Arguments>
             </viewmodels:TabbedItemViewModel>
             <viewmodels:TabbedItemViewModel x:Key="viewModel4">
@@ -43,7 +43,7 @@
             </viewmodels:TabbedItemViewModel>
             <viewmodels:TabbedItemViewModel x:Key="viewModel5">
                 <x:Arguments>
-                    <x:String>https://mobile-portalfacil.azurewebsites.net/icons/servicos_online.svg</x:String>
+                    <x:String>https://image.flaticon.com/icons/svg/347/347555.svg</x:String>
                 </x:Arguments>
             </viewmodels:TabbedItemViewModel>
         </ResourceDictionary>
