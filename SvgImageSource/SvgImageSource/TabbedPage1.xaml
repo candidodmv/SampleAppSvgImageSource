@@ -20,6 +20,7 @@
     </TabbedPage.Effects>
     <TabbedPage.Resources>
         <ResourceDictionary>
+            <x:String x:Key="urlSvg">https://image.flaticon.com/icons/svg/149/149200.svg</x:String>
             <ffimageloadingsvg:SvgImageSourceConverter x:Key="SvgImageSourceConverter"></ffimageloadingsvg:SvgImageSourceConverter>
             <viewmodels:TabItemViewModel x:Key="viewModel1"></viewmodels:TabItemViewModel>
             <viewmodels:TabItemViewModel x:Key="viewModel2"></viewmodels:TabItemViewModel>
@@ -29,10 +30,10 @@
         </ResourceDictionary>
     </TabbedPage.Resources>
   <!--Pages can be added as references or inline-->
-    <ContentPage Title="Tab 1" BindingContext="{Binding Source={StaticResource viewModel1}}" IconImageSource="https://image.flaticon.com/icons/svg/149/149200.svg"/>
-    <ContentPage Title="Tab 2" BindingContext="{Binding Source={StaticResource viewModel2}}" IconImageSource="https://image.flaticon.com/icons/svg/149/149200.svg" />
-    <ContentPage Title="Tab 3" BindingContext="{Binding Source={StaticResource viewModel3}}" IconImageSource="https://image.flaticon.com/icons/svg/149/149200.svg" />
-    <ContentPage Title="Tab 4" BindingContext="{Binding Source={StaticResource viewModel4}}" IconImageSource="https://image.flaticon.com/icons/svg/149/149200.svg" />
-    <ContentPage Title="Tab 5" BindingContext="{Binding Source={StaticResource viewModel5}}" IconImageSource="https://image.flaticon.com/icons/svg/149/149200.svg" />
+    <ContentPage Title="Tab 1" BindingContext="{Binding Source={StaticResource viewModel1}}" IconImageSource="{Binding Source={StaticResource urlSvg}, Converter={StaticResource SvgImageSourceConverter}}"/>
+    <ContentPage Title="Tab 2" BindingContext="{Binding Source={StaticResource viewModel2}}" IconImageSource="{Binding Source={StaticResource urlSvg}, Converter={StaticResource SvgImageSourceConverter}}" />
+    <ContentPage Title="Tab 3" BindingContext="{Binding Source={StaticResource viewModel3}}" IconImageSource="{Binding Source={StaticResource urlSvg}, Converter={StaticResource SvgImageSourceConverter}}" />
+    <ContentPage Title="Tab 4" BindingContext="{Binding Source={StaticResource viewModel4}}" IconImageSource="{Binding Source={StaticResource urlSvg}, Converter={StaticResource SvgImageSourceConverter}}" />
+    <ContentPage Title="Tab 5" BindingContext="{Binding Source={StaticResource viewModel5}}" IconImageSource="{Binding Source={StaticResource urlSvg}, Converter={StaticResource SvgImageSourceConverter}}" />
 </TabbedPage>
     
