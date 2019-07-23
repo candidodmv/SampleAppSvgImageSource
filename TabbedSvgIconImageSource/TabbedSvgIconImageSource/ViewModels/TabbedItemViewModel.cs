@@ -32,10 +32,6 @@ namespace TabbedSvgIconImageSource.ViewModels
         public TabbedItemViewModel(string url)
         {
             SourceImage = Xamarin.Forms.Svg.SvgImageSource.FromSvgUri(url ?? "https://image.flaticon.com/icons/svg/149/149200.svg", 36, 36, Color.Black);
-            //Device.BeginInvokeOnMainThread(async () =>
-            //{
-            //    SourceImage = new FFImageLoading.Svg.Forms.SvgImageSource(ImageSource.FromUri(new Uri("https://image.flaticon.com/icons/svg/149/149200.svg")), 36, 36, true);
-            //});
         }
     }
 }
