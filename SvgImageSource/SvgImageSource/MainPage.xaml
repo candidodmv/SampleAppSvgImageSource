@@ -2,13 +2,15 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:SvgImageSource"
+            xmlns:ffimageloadingsvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
              x:Class="SvgImageSource.MainPage">
 
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
+        <Button Text="Navigate To TabbedPage1" 
            HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+           VerticalOptions="CenterAndExpand" Clicked="Button_Clicked" />
+        <ffimageloadingsvg:SvgCachedImage WidthRequest="200" HeightRequest="200" Source="https://mobile-portalfacil.azurewebsites.net/icons/servicos_online.svg"/>
     </StackLayout>
 
 </ContentPage>

@@ -10,7 +10,7 @@ namespace SvgImageSource
         {
             InitializeComponent();
 
-            MainPage = new TabbedPage1();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

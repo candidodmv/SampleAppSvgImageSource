@@ -5,23 +5,34 @@
             xmlns:ffimageloadingsvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
             xmlns:viewmodels="clr-namespace:SvgImageSource.ViewModels;assembly=SvgImageSource"
             xmlns:pages="clr-namespace:SvgImageSource;assembly=SvgImageSource"
+            xmlns:effects="clr-namespace:SvgImageSource.Effects;assembly=SvgImageSource"
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
             android:TabbedPage.ToolbarPlacement="Bottom"
-            BarBackgroundColor="#2196F3"
+            BarBackgroundColor="Green"
             BarTextColor="White"
+            Title="TabbedPage1"
             android:TabbedPage.BarItemColor="Orange"
             android:TabbedPage.BarSelectedItemColor="Red"
             x:Class="SvgImageSource.TabbedPage1">
+
+    <TabbedPage.Effects>
+        <effects:NoShiftEffect />
+    </TabbedPage.Effects>
     <TabbedPage.Resources>
         <ResourceDictionary>
             <ffimageloadingsvg:SvgImageSourceConverter x:Key="SvgImageSourceConverter"></ffimageloadingsvg:SvgImageSourceConverter>
-            <viewmodels:TabItemViewModel x:Key="viewModel"></viewmodels:TabItemViewModel>
+            <viewmodels:TabItemViewModel x:Key="viewModel1"></viewmodels:TabItemViewModel>
+            <viewmodels:TabItemViewModel x:Key="viewModel2"></viewmodels:TabItemViewModel>
+            <viewmodels:TabItemViewModel x:Key="viewModel3"></viewmodels:TabItemViewModel>
+            <viewmodels:TabItemViewModel x:Key="viewModel4"></viewmodels:TabItemViewModel>
+            <viewmodels:TabItemViewModel x:Key="viewModel5"></viewmodels:TabItemViewModel>
         </ResourceDictionary>
     </TabbedPage.Resources>
   <!--Pages can be added as references or inline-->
-    <pages:MainPage Title="Tab 1" BindingContext="{Binding Source={StaticResource viewModel}}" IconImageSource="{Binding SourceImage}" />
-    <pages:MainPage Title="Tab 2" BindingContext="{Binding Source={StaticResource viewModel}}" IconImageSource="{Binding SourceImage}" />
-    <pages:MainPage Title="Tab 3" BindingContext="{Binding Source={StaticResource viewModel}}" IconImageSource="{Binding SourceImage}" />
-    <pages:MainPage Title="Tab 4" BindingContext="{Binding Source={StaticResource viewModel}}" IconImageSource="{Binding SourceImage}" />
-    <pages:MainPage Title="Tab 5" BindingContext="{Binding Source={StaticResource viewModel}}" IconImageSource="{Binding SourceImage}" />
+    <ContentPage Title="Tab 1" BindingContext="{Binding Source={StaticResource viewModel1}}" IconImageSource="{Binding SourceImage}"/>
+    <ContentPage Title="Tab 2" BindingContext="{Binding Source={StaticResource viewModel2}}" IconImageSource="{Binding SourceImage}" />
+    <ContentPage Title="Tab 3" BindingContext="{Binding Source={StaticResource viewModel3}}" IconImageSource="{Binding SourceImage}" />
+    <ContentPage Title="Tab 4" BindingContext="{Binding Source={StaticResource viewModel4}}" IconImageSource="{Binding SourceImage}" />
+    <ContentPage Title="Tab 5" BindingContext="{Binding Source={StaticResource viewModel5}}" IconImageSource="{Binding SourceImage}" />
 </TabbedPage>
+    
