@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SvgImageSource.CustomControl;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ using Xamarin.Forms.Xaml;
 namespace SvgImageSource
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class TabbedPage1 : TabbedPage
+    public partial class TabbedPage1 : SvgTabbedPage
     {
         public TabbedPage1()
         {

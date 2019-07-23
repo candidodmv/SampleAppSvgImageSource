@@ -72,6 +72,7 @@
   <ItemGroup>
     <Compile Include="Effects\NoShiftEffect.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="Renderers\SvgTabbedPageRenderer.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

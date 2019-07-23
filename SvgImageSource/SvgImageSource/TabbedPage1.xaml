@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+<customControls:SvgTabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
             xmlns:ffimageloadingsvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
             xmlns:viewmodels="clr-namespace:SvgImageSource.ViewModels;assembly=SvgImageSource"
             xmlns:pages="clr-namespace:SvgImageSource;assembly=SvgImageSource"
+            xmlns:customControls="clr-namespace:SvgImageSource.CustomControl;assembly=SvgImageSource"
             xmlns:effects="clr-namespace:SvgImageSource.Effects;assembly=SvgImageSource"
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
             android:TabbedPage.ToolbarPlacement="Bottom"
@@ -15,10 +16,10 @@
             android:TabbedPage.BarSelectedItemColor="Red"
             x:Class="SvgImageSource.TabbedPage1">
 
-    <TabbedPage.Effects>
+    <customControls:SvgTabbedPage.Effects>
         <effects:NoShiftEffect />
-    </TabbedPage.Effects>
-    <TabbedPage.Resources>
+    </customControls:SvgTabbedPage.Effects>
+    <customControls:SvgTabbedPage.Resources>
         <ResourceDictionary>
             <x:String x:Key="urlSvg">https://image.flaticon.com/icons/svg/149/149200.svg</x:String>
             <ffimageloadingsvg:SvgImageSourceConverter x:Key="SvgImageSourceConverter"></ffimageloadingsvg:SvgImageSourceConverter>
@@ -28,12 +29,12 @@
             <viewmodels:TabItemViewModel x:Key="viewModel4"></viewmodels:TabItemViewModel>
             <viewmodels:TabItemViewModel x:Key="viewModel5"></viewmodels:TabItemViewModel>
         </ResourceDictionary>
-    </TabbedPage.Resources>
+    </customControls:SvgTabbedPage.Resources>
   <!--Pages can be added as references or inline-->
-    <ContentPage Title="Tab 1" BindingContext="{Binding Source={StaticResource viewModel1}}" IconImageSource="{Binding Source={StaticResource urlSvg}, Converter={StaticResource SvgImageSourceConverter}}"/>
-    <ContentPage Title="Tab 2" BindingContext="{Binding Source={StaticResource viewModel2}}" IconImageSource="{Binding Source={StaticResource urlSvg}, Converter={StaticResource SvgImageSourceConverter}}" />
-    <ContentPage Title="Tab 3" BindingContext="{Binding Source={StaticResource viewModel3}}" IconImageSource="{Binding Source={StaticResource urlSvg}, Converter={StaticResource SvgImageSourceConverter}}" />
-    <ContentPage Title="Tab 4" BindingContext="{Binding Source={StaticResource viewModel4}}" IconImageSource="{Binding Source={StaticResource urlSvg}, Converter={StaticResource SvgImageSourceConverter}}" />
-    <ContentPage Title="Tab 5" BindingContext="{Binding Source={StaticResource viewModel5}}" IconImageSource="{Binding Source={StaticResource urlSvg}, Converter={StaticResource SvgImageSourceConverter}}" />
-</TabbedPage>
+    <ContentPage Title="Tab 1" BindingContext="{Binding Source={StaticResource viewModel1}}" Icon="{Binding Source={StaticResource urlSvg}, Converter={StaticResource SvgImageSourceConverter}}"/>
+    <ContentPage Title="Tab 2" BindingContext="{Binding Source={StaticResource viewModel2}}" Icon="{Binding Source={StaticResource urlSvg}, Converter={StaticResource SvgImageSourceConverter}}" />
+    <ContentPage Title="Tab 3" BindingContext="{Binding Source={StaticResource viewModel3}}" Icon="{Binding Source={StaticResource urlSvg}, Converter={StaticResource SvgImageSourceConverter}}" />
+    <ContentPage Title="Tab 4" BindingContext="{Binding Source={StaticResource viewModel4}}" Icon="{Binding Source={StaticResource urlSvg}, Converter={StaticResource SvgImageSourceConverter}}" />
+    <ContentPage Title="Tab 5" BindingContext="{Binding Source={StaticResource viewModel5}}" Icon="{Binding Source={StaticResource urlSvg}, Converter={StaticResource SvgImageSourceConverter}}" />
+</customControls:SvgTabbedPage>
     
