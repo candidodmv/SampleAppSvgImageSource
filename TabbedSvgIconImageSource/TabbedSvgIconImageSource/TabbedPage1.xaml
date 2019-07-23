@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage
+    x:Class="TabbedSvgIconImageSource.TabbedPage1"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:effects="clr-namespace:TabbedSvgIconImageSource.Effects;assembly=TabbedSvgIconImageSource"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewmodels="clr-namespace:TabbedSvgIconImageSource.ViewModels;assembly=TabbedSvgIconImageSource"
+    Title="TabbedPage1"
+    android:TabbedPage.BarItemColor="Orange"
+    android:TabbedPage.BarSelectedItemColor="Red"
+    android:TabbedPage.ToolbarPlacement="Bottom"
+    BarBackgroundColor="Green"
+    BarTextColor="White"
+    mc:Ignorable="d">
+    <TabbedPage.Effects>
+        <effects:NoShiftEffect />
+    </TabbedPage.Effects>
+    <TabbedPage.Resources>
+        <ResourceDictionary>
+            <x:String x:Key="urlSvg">https://image.flaticon.com/icons/svg/149/149200.svg</x:String>
+            <viewmodels:TabbedItemViewModel x:Key="viewModel1">
+                <x:Arguments>
+                    <x:String>https://mobile-portalfacil.azurewebsites.net/icons/servicos_online.svg</x:String>
+                </x:Arguments>
+            </viewmodels:TabbedItemViewModel>
+            <viewmodels:TabbedItemViewModel x:Key="viewModel2">
+                <x:Arguments>
+                    <x:String>https://image.flaticon.com/icons/svg/149/149200.svg</x:String>
+                </x:Arguments>
+            </viewmodels:TabbedItemViewModel>
+            <viewmodels:TabbedItemViewModel x:Key="viewModel3">
+                <x:Arguments>
+                    <x:String>https://mobile-portalfacil.azurewebsites.net/icons/servicos_online.svg</x:String>
+                </x:Arguments>
+            </viewmodels:TabbedItemViewModel>
+            <viewmodels:TabbedItemViewModel x:Key="viewModel4">
+                <x:Arguments>
+                    <x:String>https://image.flaticon.com/icons/svg/149/149200.svg</x:String>
+                </x:Arguments>
+            </viewmodels:TabbedItemViewModel>
+            <viewmodels:TabbedItemViewModel x:Key="viewModel5">
+                <x:Arguments>
+                    <x:String>https://mobile-portalfacil.azurewebsites.net/icons/servicos_online.svg</x:String>
+                </x:Arguments>
+            </viewmodels:TabbedItemViewModel>
+        </ResourceDictionary>
+    </TabbedPage.Resources>
+    <!--  Pages can be added as references or inline  -->
+    <ContentPage
+        Title="Tab 1"
+        BindingContext="{Binding Source={StaticResource viewModel1}}"
+        Icon="{Binding SourceImage}" />
+    <ContentPage
+        Title="Tab 2"
+        BindingContext="{Binding Source={StaticResource viewModel2}}"
+        Icon="{Binding SourceImage}" />
+    <ContentPage
+        Title="Tab 3"
+        BindingContext="{Binding Source={StaticResource viewModel3}}"
+        Icon="{Binding SourceImage}" />
+    <ContentPage
+        Title="Tab 4"
+        BindingContext="{Binding Source={StaticResource viewModel4}}"
+        Icon="{Binding SourceImage}" />
+    <ContentPage
+        Title="Tab 5"
+        BindingContext="{Binding Source={StaticResource viewModel5}}"
+        Icon="{Binding SourceImage}" />
+</TabbedPage>
