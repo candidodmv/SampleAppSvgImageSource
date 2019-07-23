@@ -29,10 +29,10 @@
         </ResourceDictionary>
     </TabbedPage.Resources>
   <!--Pages can be added as references or inline-->
-    <ContentPage Title="Tab 1" BindingContext="{Binding Source={StaticResource viewModel1}}" IconImageSource="{Binding SourceImage}"/>
-    <ContentPage Title="Tab 2" BindingContext="{Binding Source={StaticResource viewModel2}}" IconImageSource="{Binding SourceImage}" />
-    <ContentPage Title="Tab 3" BindingContext="{Binding Source={StaticResource viewModel3}}" IconImageSource="{Binding SourceImage}" />
-    <ContentPage Title="Tab 4" BindingContext="{Binding Source={StaticResource viewModel4}}" IconImageSource="{Binding SourceImage}" />
-    <ContentPage Title="Tab 5" BindingContext="{Binding Source={StaticResource viewModel5}}" IconImageSource="{Binding SourceImage}" />
+    <ContentPage Title="Tab 1" BindingContext="{Binding Source={StaticResource viewModel1}}" IconImageSource="https://image.flaticon.com/icons/svg/149/149200.svg"/>
+    <ContentPage Title="Tab 2" BindingContext="{Binding Source={StaticResource viewModel2}}" IconImageSource="https://image.flaticon.com/icons/svg/149/149200.svg" />
+    <ContentPage Title="Tab 3" BindingContext="{Binding Source={StaticResource viewModel3}}" IconImageSource="https://image.flaticon.com/icons/svg/149/149200.svg" />
+    <ContentPage Title="Tab 4" BindingContext="{Binding Source={StaticResource viewModel4}}" IconImageSource="https://image.flaticon.com/icons/svg/149/149200.svg" />
+    <ContentPage Title="Tab 5" BindingContext="{Binding Source={StaticResource viewModel5}}" IconImageSource="https://image.flaticon.com/icons/svg/149/149200.svg" />
 </TabbedPage>
     
